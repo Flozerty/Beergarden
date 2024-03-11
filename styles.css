@@ -1,18 +1,228 @@
-nav {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+
+/* ----------------NAV BAR----------------- */
+header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  height: 85px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
 }
 
-.nav-links {
+
+#logo-img {
+  height: 25px;
+  padding-left: 50px;
+}
+
+#nav-links,
+#socials {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
 
 .nav-link {
-  padding: 5px;
+  padding: 10px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover a {
+  color: grey;
+  transition: 0.4s;
+}
+
+#socials {
+  padding-right: 50px;
+}
+
+/* ----------------HOME------------------ */
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#home-back {
+  position: relative;
+  z-index: -1;
+}
+
+#home-front {
+  position: absolute;
+  top: 15%;
+  height: 70%;
+}
+
+/* ----------------CITATION------------------ */
+
+#citation {
+  background-color: rgb(185, 137, 64);
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 50px 100px;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 1000;
+}
+
+/* ----------------TRADITIONS------------------ */
+
+.tradition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#traditions .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#beer-tradition .img-container {
+  background-image: url("img/h5-el-holder-img-1-1.jpg");
+}
+
+#pub-story .img-container {
+  background-image: url("img/h5-el-holder-img-2.jpg");
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.tradition-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: auto;
+  width: 50%;
+}
+
+.subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.tradition-text {
+  font-family: "Raleway";
+  padding: 20px 50px;
+  line-height: 2em;
+}
+
+.tradition-button {
+  width: fit-content;
+  align-self: center;
+  padding: 8px 5dvh;
+  background-color: rgb(185, 137, 64);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.tradition-button:hover {
+  background-color: rgb(189, 151, 95);
+  transform: scale(1.1);
+}
+
+.tradition:nth-child(1) {
+  flex-direction: row-reverse;
+}
+
+/* ----------------GALLERY------------------ */
+
+#gallery {
+  display: flex;
+}
+
+#gallery .img-container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+}
+
+#gallery img {
+  z-index: -1;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.look-img {
+  color: transparent;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+#gallery .img-container:hover {
+  background-color: rgba(201, 148, 69, 0.8);
+}
+
+#gallery .img-container:hover img {
+  transform: scale(1.5);
+}
+
+#gallery .img-container:hover .look-img {
+  color: white;
+  transform: rotate(90deg);
+}
+
+/* ----------------SERVICES------------------ */
+
+#services {
+  display: flex;
+  padding: 100px 15%;
+  text-align: center;
+}
+
+#services figure {
+  margin: 0 20px;
+}
+
+#services h3 {
+  padding: 10px 0;
+}
+
+#services p {
+  line-height: 2em;
+}
+
+#services figure:hover h3 {
+  color: rgb(185, 137, 64);
+  transition: 0.2s;
 }

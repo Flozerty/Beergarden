@@ -6,58 +6,200 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beergarden</title>
 
+  <script src="https://kit.fontawesome.com/7252ea4d54.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header>
+    <img id="logo-img" src="img/logo-light.png" alt="logo revolver">
     <nav>
-      <div id="logo"><img src="img/logo-light.png"></div>
 
-      <div id="nav-links">
-        <ul class="nav-links">
-          <li class="nav-link">
-            <a href="#home">home</a>
-          </li>
-          <li class="nav-link">
-            <a href="#tradition">tradition</a>
-          </li>
-          <li class="nav-link">
-            <a href="#services">services</a>
-          </li>
-          <li class="nav-link">
-            <a href="#menu">menu</a>
-          </li>
-          <li class="nav-link">
-            <a href="#contact">contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div id="socials">
-        <div class="social">
-          <i class="fa-brands fa-twitter"></i>
-        </div>
-        <div class="social">
-          <i class="fa-brands fa-facebook"></i>
-        </div>
-        <div class="social">
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-      </div>
+      <ul id="nav-links">
+        <li class="nav-link">
+          <a href="#home">HOME</a>
+        </li>
+        <li class="nav-link">
+          <a href="#tradition">TRADITION</a>
+        </li>
+        <li class="nav-link">
+          <a href="#services">SERVICES</a>
+        </li>
+        <li class="nav-link">
+          <a href="#menu">MENU</a>
+        </li>
+        <li class="nav-link">
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
     </nav>
 
-    <section id="home" class="section-container">
-      <img src="img/h5-revolution-img-1.jpg" alt="image de fond brasserie" id="home-font">
-      <img src="img/h5-slider-graphic.png" alt="image d'accueil Beer Garden" id="img-home">
-    </section>
-
+    <ul id="socials">
+      <li class="nav-link">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li class="nav-link">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </li>
+      <li class="nav-link">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+    </ul>
   </header>
 
 
-  <main></main>
 
-  <footer></footer>
+
+
+  <main>
+    <section id="home" class="section-container">
+      <img src="img/h5-revolution-img-1.jpg" alt="image de fond brasserie" id="home-back">
+      <img src="img/h5-slider-graphic.png" alt="image d'accueil Beer Garden" id="home-front">
+    </section>
+
+    <section id="citation">
+      <blockquote>
+        <p>
+          "LOVE AND MAGIC HAVE A GREAT DEAL IN COMMON, THEY ENRICH THE SOUL, DELIGHT THE HEART. AND THEY BOTH TAKE
+          PRACTICE."
+        </p>
+      </blockquote>
+    </section>
+
+    <section id="traditions" class="container">
+
+      <div class="tradition" id="beer-tradition">
+        <div class="img-container">
+          <!-- <img src="img/h5-el-holder-img-1-1.jpg" alt="image de fond brasserie" class="tradition-img-back"> -->
+          <img src="img/h5-holder-image-1.png" alt="image fût de bière traditionnel" class="tradition-img-front">
+        </div>
+
+        <article class="tradition-description">
+
+          <h2>BEER TRADITION</h2>
+          <h3 class="subtitle">
+            Tons of shortcodes provide countless options
+          </h3>
+          <p class="tradition-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente dicta
+            voluptates repellat,
+            blanditiis ea! Iure, modi odit? Dolor odio adipisci assumenda ad quasi excepturi dolorum accusamus quam quia
+            consectetur. Earum, praesentium. Saepe molestiae, sed consequatur fugit libero totam repellendus.
+          </p>
+          <a class="tradition-button" href="#">READ MORE</a>
+        </article>
+      </div>
+
+      <div class="tradition" id="pub-story">
+        <div class="img-container">
+          <!-- <img src="img/h5-el-holder-img-2.jpg" alt="image de fond brasserie" class="tradition-img-back"> -->
+          <img src="img/h5-holder-image-2.png" alt="image de bière" class="tradition-img-front">
+        </div>
+
+        <article class="tradition-description">
+          <h2>PUB STORY</h2>
+          <h3 class="subtitle">Tons of shortcodes provide countless options</h3>
+
+          <p class="tradition-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente dicta
+            voluptates repellat,
+            blanditiis ea! Iure, modi odit? Dolor odio adipisci assumenda ad quasi excepturi dolorum accusamus quam
+            quia consectetur. Earum, praesentium. Saepe molestiae, sed consequatur fugit libero totam repellendus.</p>
+          <a class="tradition-button" href="#">READ MORE</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="container">
+      <figure class="img-container">
+        <img src="img/h5-gallery-img-1-477x477.jpg" alt="photo du bar">
+        <div class="look-img"><i class="fa-solid fa-plus"></i></div>
+      </figure>
+
+      <figure class="img-container">
+        <img src="img/h5-gallery-img-2-477x477.jpg" alt="photo de bières">
+        <div class="look-img"><i class="fa-solid fa-plus"></i></div>
+      </figure>
+
+      <figure class="img-container">
+        <img src="img/h5-gallery-img-3-477x477.jpg" alt="visuel du bar à l'entrée">
+        <div class="look-img"><i class="fa-solid fa-plus"></i></div>
+      </figure>
+
+      <figure class="img-container">
+        <img src="img/h5-gallery-img-4-477x477.jpg" alt="repas convivial">
+        <div class="look-img"><i class="fa-solid fa-plus"></i></div>
+      </figure>
+    </section>
+
+    <section id="services" class="container">
+      <figure id="setch">
+        <img src="img/h5-icon-1.png">
+
+        <figcaption>
+          <h3>SETCH IS THE FIRST</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsum assumenda soluta omnis vitae
+            accusamus?</p>
+        </figcaption>
+      </figure>
+
+      <figure id="second">
+        <img src="img/h5-icon-2.png">
+
+        <figcaption>
+          <h3>SECOND CHANCE</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsum assumenda soluta omnis vitae
+            accusamus?</p>
+        </figcaption>
+      </figure>
+
+      <figure id="test">
+        <img src="img/h5-icon-3.png">
+
+        <figcaption>
+          <h3>TEST IT ALL</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsum assumenda soluta omnis vitae
+            accusamus?</p>
+        </figcaption>
+      </figure>
+
+      <figure id="refresh">
+        <img src="img/h5-icon-4.png">
+
+        <figcaption>
+          <h3>REFRESH YOUR TIME</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsum assumenda soluta omnis vitae
+            accusamus?</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="parallax">
+      <!-- <img src="img/h5-parallax-img-2.jpg" alt="image de brasseurs"> -->
+      <div>
+
+        <h2>THIS IS OUR OFFER</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis totam voluptate? Laborum, eum
+          molestiae.</p>
+      </div>
+    </section>
+
+    <section id="maps">
+      MAPS
+    </section>
+  </main>
+
+  <footer><img src="img/footer-logo.png" alt="logo revolver"></footer>
 </body>
 
 </html>
