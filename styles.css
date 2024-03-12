@@ -43,7 +43,7 @@ header a {
 
 .nav-link:hover a {
   color: grey;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 #socials {
@@ -225,4 +225,10 @@ h2 {
 #services figure:hover h3 {
   color: rgb(185, 137, 64);
   transition: 0.2s;
+}
+
+/* ----------------PARALLAXE------------------ */
+
+#parallax {
+  text-align: center;
 }
