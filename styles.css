@@ -1,3 +1,8 @@
+:root {
+  --bg-color: rgb(185, 137, 64);
+  --p-50-100: 50px 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,24 +13,47 @@
 /* ----------------NAV BAR----------------- */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 85px;
+  min-height: 85px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
+}
+
+nav {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav i {
+  color: white;
+}
+
+nav i:hover {
+  cursor: pointer;
 }
 
 
 #logo-img {
   height: 25px;
-  padding-left: 50px;
+  position: absolute;
+  left: 20px;
+  top: 30px;
 }
 
-#nav-links,
+#nav-links {
+  list-style: none;
+  display: flex;
+}
+
 #socials {
   display: flex;
   flex-direction: row;
@@ -47,7 +75,9 @@ header a {
 }
 
 #socials {
-  padding-right: 50px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
 }
 
 /* ----------------HOME------------------ */
@@ -73,11 +103,11 @@ header a {
 /* ----------------CITATION------------------ */
 
 #citation {
-  background-color: rgb(185, 137, 64);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   color: white;
-  padding: 50px 100px;
+  padding: var(--p-50-100);
   font-size: 3.5rem;
   text-align: center;
   font-weight: 1000;
@@ -111,7 +141,7 @@ header a {
   background-image: url("img/h5-el-holder-img-2.jpg");
 }
 
-h2 {
+.title {
   font-size: 2.5rem;
   font-weight: 300;
 }
@@ -127,6 +157,8 @@ h2 {
 .subtitle {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 .tradition-text {
@@ -139,7 +171,7 @@ h2 {
   width: fit-content;
   align-self: center;
   padding: 8px 5dvh;
-  background-color: rgb(185, 137, 64);
+  background-color: var(--bg-color);
   color: white;
   border-radius: 5px;
   text-decoration: none;
@@ -158,6 +190,7 @@ h2 {
 
 #gallery {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #gallery .img-container {
@@ -206,7 +239,7 @@ h2 {
 
 #services {
   display: flex;
-  padding: 100px 15%;
+  padding: 100px 10%;
   text-align: center;
 }
 
@@ -214,8 +247,10 @@ h2 {
   margin: 0 20px;
 }
 
-#services h3 {
+#services .services-sub {
   padding: 10px 0;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 #services p {
@@ -241,6 +276,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 50px;
 }
 
 #parallax h2 {
@@ -254,9 +290,9 @@ h2 {
 }
 
 #overlay {
-  box-shadow: rgb(17, 17, 17) 0px -180px 100px -50px inset,
+  box-shadow:
+    rgb(17, 17, 17) 0px -180px 100px -50px inset,
     rgb(17, 17, 17) 0 180px 100px -50px inset;
-
 
   height: 100%;
   width: 100%;
@@ -282,4 +318,100 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* -------------------MQ-------------------- */
+
+@media screen and (max-width:1200px) {
+
+  #citation {
+    font-size: 2rem;
+  }
+
+  .tradition:nth-child(n) {
+    flex-direction: column;
+  }
+
+  #traditions .img-container {
+    width: 100%;
+  }
+
+  .tradition-description {
+    width: 80%;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (max-width:1000px) {
+
+  #services {
+    flex-direction: column;
+  }
+
+  #services figure {
+    margin: 20px 50px;
+  }
+}
+
+@media screen and (max-width:800px) {
+
+  #home-front {
+    top: 20%;
+    height: 50%;
+  }
+
+  #citation {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  #gallery .img-container {
+    width: 50%;
+  }
+
+  /* ---------------BURGER----------------- */
+
+  #nav-links {
+    flex-direction: column;
+  }
+
+  .hide-menu .nav-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  #home-front {
+    top: 25%;
+    height: 40%;
+  }
+
+  #citation {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  #traditions .img-container img {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width:400px) {
+
+  #home-front {
+    top: 30%;
+    height: 35%;
+  }
+
+  #gallery .img-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  nav i {
+    position: absolute;
+    top: -50px;
+  }
 }

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beergarden">
   <title>Beergarden</title>
 
   <script src="https://kit.fontawesome.com/7252ea4d54.js" crossorigin="anonymous"></script>
@@ -20,36 +21,38 @@
 <body>
   <header>
     <img id="logo-img" src="img/logo-light.png" alt="logo revolver">
-    <nav>
 
-      <ul id="nav-links">
+    <nav>
+      <i class="fa-solid fa-bars" title="nav-burger" id="nav-burger"></i>
+
+      <ul id="nav-links" class="hide-menu">
         <li class="nav-link">
           <a href="#home">HOME</a>
         </li>
         <li class="nav-link">
-          <a href="#tradition">TRADITION</a>
+          <a href="#traditions">TRADITION</a>
         </li>
         <li class="nav-link">
           <a href="#services">SERVICES</a>
         </li>
         <li class="nav-link">
-          <a href="#menu">MENU</a>
+          <a href="#parallax">MENU</a>
         </li>
         <li class="nav-link">
-          <a href="#contact">CONTACT</a>
+          <a href="#maps">CONTACT</a>
         </li>
       </ul>
     </nav>
 
     <ul id="socials">
       <li class="nav-link">
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter" title="twitter"></i></a>
       </li>
       <li class="nav-link">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook" title="facebook"></i></a>
       </li>
       <li class="nav-link">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram" title="instagram"></i></a>
       </li>
     </ul>
   </header>
@@ -81,10 +84,10 @@
 
         <article class="tradition-description">
 
-          <h2>BEER TRADITION</h2>
-          <h3 class="subtitle">
+          <p class="title">BEER TRADITION</p>
+          <p class="subtitle">
             Tons of shortcodes provide countless options
-          </h3>
+          </p>
           <p class="tradition-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente dicta
             voluptates repellat,
@@ -102,8 +105,8 @@
         </div>
 
         <article class="tradition-description">
-          <h2>PUB STORY</h2>
-          <h3 class="subtitle">Tons of shortcodes provide countless options</h3>
+          <p class="title">PUB STORY</p>
+          <p class="subtitle">Tons of shortcodes provide countless options</p>
 
           <p class="tradition-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente dicta
             voluptates repellat,
@@ -117,31 +120,31 @@
     <section id="gallery" class="container">
       <figure class="img-container">
         <img src="img/h5-gallery-img-1-477x477.jpg" alt="photo du bar">
-        <div class="look-img"><i class="fa-solid fa-plus"></i></div>
+        <div class="look-img"><i class="fa-solid fa-plus" title="look image"></i></div>
       </figure>
 
       <figure class="img-container">
         <img src="img/h5-gallery-img-2-477x477.jpg" alt="photo de bières">
-        <div class="look-img"><i class="fa-solid fa-plus"></i></div>
+        <div class="look-img"><i class="fa-solid fa-plus" title="look image"></i></div>
       </figure>
 
       <figure class="img-container">
         <img src="img/h5-gallery-img-3-477x477.jpg" alt="visuel du bar à l'entrée">
-        <div class="look-img"><i class="fa-solid fa-plus"></i></div>
+        <div class="look-img"><i class="fa-solid fa-plus" title="look image"></i></div>
       </figure>
 
       <figure class="img-container">
         <img src="img/h5-gallery-img-4-477x477.jpg" alt="repas convivial">
-        <div class="look-img"><i class="fa-solid fa-plus"></i></div>
+        <div class="look-img"><i class="fa-solid fa-plus" title="look image"></i></div>
       </figure>
     </section>
 
     <section id="services" class="container">
       <figure id="setch">
-        <img src="img/h5-icon-1.png">
+        <img src="img/h5-icon-1.png" alt="image 1">
 
         <figcaption>
-          <h3>SETCH IS THE FIRST</h3>
+          <p class="services-sub">SETCH IS THE FIRST</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsum assumenda soluta omnis vitae
             accusamus?</p>
@@ -149,10 +152,10 @@
       </figure>
 
       <figure id="second">
-        <img src="img/h5-icon-2.png">
+        <img src="img/h5-icon-2.png" alt="image 2">
 
         <figcaption>
-          <h3>SECOND CHANCE</h3>
+          <p class="services-sub">SECOND CHANCE</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsum assumenda soluta omnis vitae
             accusamus?</p>
@@ -160,10 +163,10 @@
       </figure>
 
       <figure id="test">
-        <img src="img/h5-icon-3.png">
+        <img src="img/h5-icon-3.png" alt="image 3">
 
         <figcaption>
-          <h3>TEST IT ALL</h3>
+          <p class="services-sub">TEST IT ALL</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsum assumenda soluta omnis vitae
             accusamus?</p>
@@ -171,10 +174,10 @@
       </figure>
 
       <figure id="refresh">
-        <img src="img/h5-icon-4.png">
+        <img src="img/h5-icon-4.png" alt="image 4">
 
         <figcaption>
-          <h3>REFRESH YOUR TIME</h3>
+          <p class="services-sub">REFRESH YOUR TIME</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ipsum assumenda soluta omnis vitae
             accusamus?</p>
@@ -185,10 +188,12 @@
     <section id="parallax">
       <!-- <img src="img/h5-parallax-img-2.jpg" alt="image de brasseurs"> -->
       <div>
-        <h2>THIS IS OUR OFFER</h2>
-        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis totam voluptate?
+        <p class="title">THIS IS OUR OFFER</p>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis totam voluptate?
           Laborum, eum
-          molestiae.</p>
+          molestiae.
+        </p>
       </div>
     </section>
 
@@ -197,13 +202,14 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12557.176863550561!2d7.748690519656191!3d48.574972235618695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c8495e18b2c1%3A0x971a483118e7241f!2sStrasbourg!5e0!3m2!1sfr!2sfr!4v1710495341204!5m2!1sfr!2sfr"
           width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade" title="Beergarden on Google Maps"></iframe>
         <img src="img/h1-pin.png" alt="cursor maps">
       </div>
     </section>
   </main>
 
   <footer><img src="img/footer-logo.png" alt="logo revolver" id="maps-cursor"></footer>
+  <script src="menuBurger.js"></script>
 </body>
 
 </html>
