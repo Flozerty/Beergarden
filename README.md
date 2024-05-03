@@ -1,9 +1,5 @@
 # Beergarden
 
-Ce projet de site vitrine a été 
-
-## Description
-
 Beergarden est un projet de site vitrine réalisé dans le cadre de la formation à Elan Formation pour s'entraîner en développement front-end.
 Il représente un concept de brasseire et met en valeur les traditions des brasseurs ainsi que les services offerts par le Beergarden.
 
