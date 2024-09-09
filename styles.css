@@ -193,52 +193,52 @@ header a {
 #gallery {
   display: flex;
   flex-wrap: wrap;
+
+  img {
+    z-index: -1;
+    transition: 0.5s;
+    width: 100%;
+  }
+
+  .look-img {
+    color: transparent;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+  }
+
+  .img-container {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      background-color: rgba(201, 148, 69, 0.8);
+
+      img {
+        transform: scale(1.5);
+      }
+
+      .look-img {
+        color: white;
+        transform: rotate(90deg);
+      }
+    }
+  }
 }
 
-#gallery .img-container {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  overflow: hidden;
-  position: relative;
-}
-
-#gallery img {
-  z-index: -1;
-  transition: 0.5s;
-  width: 100%;
-}
-
-.look-img {
-  color: transparent;
-  transition: 0.5s;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-}
-
-#gallery .img-container:hover {
-  background-color: rgba(201, 148, 69, 0.8);
-}
-
-#gallery .img-container:hover img {
-  transform: scale(1.5);
-}
-
-#gallery .img-container:hover .look-img {
-  color: white;
-  transform: rotate(90deg);
-}
 
 /* ----------------SERVICES------------------ */
-
 #services {
   display: flex;
   padding: 100px 10%;
@@ -286,7 +286,6 @@ header a {
 }
 
 /* ------------------ MAPS -------------------- */
-
 #maps {
   height: 80vh;
 }
@@ -302,18 +301,17 @@ header a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-#overlay iframe {
-  filter: grayscale(1) invert(1);
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  iframe {
+    filter: grayscale(1) invert(1);
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 /* -------------------FOOTER-------------------- */
-
 footer {
   background-color: rgb(17, 17, 17);
   height: 100px;
